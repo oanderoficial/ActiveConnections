@@ -1,7 +1,7 @@
 <h1>ActiveConnection</h1>
 
 Listar todos os IP conectados ao seu computador
-```
+```ps1
 netstat -an | Select-String "ESTABLISHED" | ForEach-Object {
     $line = $_ -split "\s+"
     $localAddress = $line[1]
