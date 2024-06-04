@@ -70,11 +70,16 @@ Get-NetIPAddress
 ```ps1
 Get-NetIPAddress -InterfaceAlias Ethernet
 ```
-<strong> Obtenha informações de endereços IP's formatando a saída </strong>
+<strong> Obtenha informações de endereços IP's formatando a saída: </strong>
 
 ```ps1
 Get-NetIPAddress | Format-Table
 ```
+<strong> Obter informações de endereço IP pelo índice da interface (ifIndex): </strong>
+
+```ps1
+Get-NetIPAddress -InterfaceIndex 17
+````
 
 <strong> Filtrar resultados por família de endereço (IPv4 ou IPv6):  </strong>
 
