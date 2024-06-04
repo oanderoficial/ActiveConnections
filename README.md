@@ -45,10 +45,6 @@ Test-NetConnection -ComputerName server1 -Port 80
 Test-NetConnection -ComputerName server2 -Trace
 ```
 
-<strong> Verificar qual rota será usada para enviar pacotes para um destino: </strong>
-```ps1
-Test-NetConnection -ComputerName server3 -Route
-```
 <strong>  Testando com parâmetros personalizados: </strong> 
 
 ```ps1
