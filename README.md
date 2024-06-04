@@ -85,3 +85,8 @@ Get-NetIPAddress -InterfaceIndex 17
 ```ps1
 Get-NetIPAddress -AddressFamily IPv4
 ```
+
+- Documentação do Get-NetIPAddress:
+  https://abrir.link/DAesG
+- Exemplos de Get-NetIPAddress:
+  https://abrir.link/DAesG
