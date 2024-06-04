@@ -41,7 +41,7 @@ netstat -e -s
 ```
 ![image](https://github.com/oanderoficial/ActiveConnections/assets/32654298/f892657c-1ccf-413c-87d0-b7decf2aa387)
 
-<strong> Exibir as estatísticas apenas para os protocolos TCP e UDP </strong>
+<strong> Exibir as estatísticas apenas para os protocolos TCP e UDP: </strong>
 
 ```ps1
 netstat -s -p tcp
@@ -62,7 +62,28 @@ netstat -o 5
 ```ps1
 netstat -n -o
 ```
- 
+
+<strong> Exibir apenas as conexões de escuta (portas abertas):  </strong>
+
+```ps1
+netstat -aon | findstr "LISTENING"
+```
+<strong> Verificar conexões para um endereço IP ou nome de host específico: </strong> 
+
+```ps1
+netstat -aon | findstr "192.168.1.100"
+```
+<strong>Exibir estatísticas de roteamento: </strong>
+
+```ps1
+netstat -r
+```
+
+<strong> Mostrar estatísticas de interface de rede: </strong>
+    
+```ps1 
+netstat -s
+```
 <strong>  cmdlet Test-NetConnection  </strong>
 
 <p>O Test-NetConnection oferece uma variedade de opções que permitem personalizar os testes. As opções mais comuns incluem: </p>
