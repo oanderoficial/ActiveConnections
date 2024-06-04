@@ -57,9 +57,9 @@ Test-NetConnection -ComputerName www.oander.site -Count 10 -Size 2048 -Timeout 5
 <br>
 <br>
 
-<strong> cmdlet Get-NetIPAddress </strong>
+<strong> cmdlet Get-NetIPAddress. </strong>
 
-<p> Exibe as configurações de IP de um adaptador de rede específico. </p>
+<p> O cmdlet Get-NetIPAddress obtém a configuração do endereço IP, como endereços IPv4, endereços IPv6 e as interfaces IP às quais os endereços estão associados. Sem parâmetros, este cmdlet obtém toda a configuração do endereço IP do computador.</p>
 
 <h2> Exemplos: </h2> 
 
