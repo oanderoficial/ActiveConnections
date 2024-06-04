@@ -22,6 +22,10 @@ netstat -an | Select-String "ESTABLISHED" | ForEach-Object {
 - -Timeout: Especifica o tempo limite para os testes em segundos.
 - -InformationLevel: Especifica o nível de informação a ser exibido nos resultados. Os níveis válidos são Basic, Detailed e Verbose.
 
+<strong> Test-NetConnection Documentação: </storng> 
+<br>
+-->  https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2022-ps
+
 <h2> Exemplos: </h2>
 
 <strong> Testar a conectividade com um site: </strong>
