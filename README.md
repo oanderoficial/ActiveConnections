@@ -29,12 +29,15 @@ netstat -an | Select-String "ESTABLISHED" | ForEach-Object {
 ```ps1
 Test-NetConnection -ComputerName www.oander.site
 ```
+![image](https://github.com/oanderoficial/ActiveConnections/assets/32654298/aa29991f-1658-4713-a3b4-e9bde0456a5b)
 
 <strong> Testar a conectividade com um servidor em uma porta específica: </strong>
 
 ```ps1
 Test-NetConnection -ComputerName server1 -Port 80
 ```
+![image](https://github.com/oanderoficial/ActiveConnections/assets/32654298/7ff1187b-d734-4f9d-bb5e-4382d5148bbc)
+
 
 <strong> Traçar a rota para um destino: </strong>
 
