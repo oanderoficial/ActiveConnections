@@ -11,6 +11,58 @@ netstat -an | Select-String "ESTABLISHED" | ForEach-Object {
 ```
 <br>
 
+<strong> netstat </strong>
+
+<p> Exibe conexões TCP ativas, portas nas quais o computador está em escuta, estatísticas de Ethernet, tabela de roteamento de IP, estatísticas de IPv4 (para os protocolos IP, ICMP, TCP e UDP) e estatísticas de IPv6 (para os protocolos IPv6, ICMPv6, TCP sobre IPv6 e UDP sobre IPv6). Usado sem parâmetros, esse comando exibe conexões TCP ativas. </p>
+
+- Documentação: https://learn.microsoft.com/pt-br/windows-server/administration/windows-commands/netstat
+
+<strong> Sintaxe </strong>
+
+```ps1
+netstat [-a] [-b] [-e] [-n] [-o] [-p <Protocol>] [-r] [-s] [<interval>]
+```
+<strong> Exibir todas as conexões de rede ativas: </strong>
+
+```ps1
+netstat
+```
+<strong> Listar conexões TCP e UDP: </strong> 
+
+```ps1
+netstat -a
+```
+
+
+<strong>Exibir as estatísticas de Ethernet e as estatísticas de todos os protocolos: </strong> 
+
+```ps1
+netstat -e -s
+```
+![image](https://github.com/oanderoficial/ActiveConnections/assets/32654298/f892657c-1ccf-413c-87d0-b7decf2aa387)
+
+<strong> Exibir as estatísticas apenas para os protocolos TCP e UDP </strong>
+
+```ps1
+netstat -s -p tcp
+```
+
+```ps1
+netstat -s -p udp
+```
+
+ <strong> Exibir conexões TCP ativas e as IDs de processo a cada 5 segundos: </strong>
+
+ ```ps1
+netstat -o 5
+```
+
+<strong> Exibir conexões TCP ativas e as IDs de processo usando o formulário numérico: </strong>
+
+```ps1
+netstat -n -o
+```
+ 
 <strong>  cmdlet Test-NetConnection  </strong>
 
 <p>O Test-NetConnection oferece uma variedade de opções que permitem personalizar os testes. As opções mais comuns incluem: </p>
