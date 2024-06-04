@@ -9,6 +9,8 @@ netstat -an | Select-String "ESTABLISHED" | ForEach-Object {
     Write-Host "Conexão estabelecida de $localAddress para $foreignAddress"
 }
 ```
+<br>
+
 <strong>  cmdlet Test-NetConnection  </strong>
 
 <p>O Test-NetConnection oferece uma variedade de opções que permitem personalizar os testes. As opções mais comuns incluem: </p>
@@ -48,4 +50,23 @@ Test-NetConnection -ComputerName server3 -Route
 
 ```ps1
 Test-NetConnection -ComputerName www.oander.site -Count 10 -Size 2048 -Timeout 5 -InformationLevel Detailed
+```
+<br>
+<br>
 
+<strong> cmdlet Get-NetIPAddress </strong>
+
+<p> Exibe as configurações de IP de um adaptador de rede específico. </p>
+
+<h2> Exemplos: </h2> 
+
+<strong> Obter informações sobre todos os adaptadores de rede: </strong>
+
+```ps1
+Get-NetIPAddress
+```
+<strong> Obter informações sobre um adaptador de rede específico: </strong> 
+
+```ps1
+Get-NetIPAddress -InterfaceAlias Ethernet
+```
