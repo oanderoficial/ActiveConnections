@@ -84,6 +84,11 @@ netstat -r
 ```ps1 
 netstat -s
 ```
+
+<strong> Capturar e registrar a saída do netstat em um arquivo de texto: </strong>
+```ps1
+netstat -aon > netstat_output.txt
+```
 <strong>  cmdlet Test-NetConnection  </strong>
 
 <p>O Test-NetConnection oferece uma variedade de opções que permitem personalizar os testes. As opções mais comuns incluem: </p>
