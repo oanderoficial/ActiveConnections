@@ -70,3 +70,9 @@ Get-NetIPAddress
 ```ps1
 Get-NetIPAddress -InterfaceAlias Ethernet
 ```
+
+<strong> Filtrar resultados por família de endereço (IPv4 ou IPv6):  </strong>
+
+```ps1
+Get-NetIPAddress -AddressFamily IPv4
+```
